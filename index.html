@@ -2,7 +2,7 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
     <title>Fuity Clicker</title>
     <link rel="stylesheet" href="style.css">
 </head>
@@ -36,6 +36,9 @@
         </div>
         <div class="main">
             <div class="left">
+                <div class="clicker-title">
+                    <p>CLICKER UPGRADES</p>
+                </div>
                 <div class="upgrade" onclick="buyUpgrade('clicker')">
                     <div class="left-section">
                         <img src="./assets/clicker-white.png" alt="" class="upgrade-img">
@@ -115,12 +118,16 @@
                     <img
                      src="./assets/fruit.png" 
                      alt="./assets/strawberry-main.png" 
-                     class="fruit-image" 
+                     class="fruit-image"
+                     id="fruit-image-main" 
                      onclick="incrementFruit(event)" 
                      draggable="false">
                 </div>
             </div>
             <div class="right">
+                <div class="clicker-title">
+                    <p>IDLE UPGRADES</p>
+                </div>
                 <div class="upgrade" onclick="buyUpgrade('strawberry')">
                     <div class="left-section">
                         <img src="./assets/strawberry.png" alt="" id="myImage" class="upgrade-img">

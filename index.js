@@ -182,6 +182,7 @@ function incrementPrestiege(){
             document.getElementsByClassName("fruit-cost-img")[i].src = "./assets/strawberry-main.png";
         }
         document.getElementsByClassName("fruit-image")[0].src = "./assets/strawberry-main.png";
+        document.getElementsByClassName("prestiege")[0].style.setProperty('display', 'none');
     }
 }
 
