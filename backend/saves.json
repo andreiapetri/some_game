@@ -1,0 +1,170 @@
+{
+  "user_bljx1ncg3": {
+    "upgrades": [
+      {
+        "name": "clicker",
+        "level": 0,
+        "cost": 10,
+        "increase": 1
+      },
+      {
+        "name": "banana",
+        "level": 0,
+        "cost": 130,
+        "increase": 4
+      },
+      {
+        "name": "mango",
+        "level": 0,
+        "cost": 850,
+        "increase": 12
+      },
+      {
+        "name": "watermelon",
+        "level": 0,
+        "cost": 4750,
+        "increase": 82
+      },
+      {
+        "name": "strawberry",
+        "level": 2,
+        "cost": 12.544000000000002,
+        "increase": 1.0404
+      },
+      {
+        "name": "tangerine",
+        "level": 0,
+        "cost": 130,
+        "increase": 4
+      },
+      {
+        "name": "coconut",
+        "level": 0,
+        "cost": 850,
+        "increase": 12
+      },
+      {
+        "name": "plum",
+        "level": 0,
+        "cost": 4750,
+        "increase": 82
+      }
+    ],
+    "fpc": 1,
+    "fps": 2.0604,
+    "fruit": 0,
+    "prestiege": 1
+  },
+  "user_2u5t07hma": {
+    "upgrades": [
+      {
+        "name": "clicker",
+        "level": 0,
+        "cost": 10,
+        "increase": 1
+      },
+      {
+        "name": "banana",
+        "level": 0,
+        "cost": 130,
+        "increase": 4
+      },
+      {
+        "name": "mango",
+        "level": 0,
+        "cost": 850,
+        "increase": 12
+      },
+      {
+        "name": "watermelon",
+        "level": 0,
+        "cost": 4750,
+        "increase": 82
+      },
+      {
+        "name": "strawberry",
+        "level": 4,
+        "cost": 15.735193600000004,
+        "increase": 1.08243216
+      },
+      {
+        "name": "tangerine",
+        "level": 0,
+        "cost": 130,
+        "increase": 4
+      },
+      {
+        "name": "coconut",
+        "level": 0,
+        "cost": 850,
+        "increase": 12
+      },
+      {
+        "name": "plum",
+        "level": 0,
+        "cost": 4750,
+        "increase": 82
+      }
+    ],
+    "fpc": 1,
+    "fps": 4.20404016,
+    "fruit": 11.116982752000002,
+    "prestiege": 1
+  },
+  "user_48arscd43": {
+    "upgrades": [
+      {
+        "name": "clicker",
+        "level": 1,
+        "cost": 11.200000000000001,
+        "increase": 1.02
+      },
+      {
+        "name": "banana",
+        "level": 0,
+        "cost": 130,
+        "increase": 4
+      },
+      {
+        "name": "mango",
+        "level": 0,
+        "cost": 850,
+        "increase": 12
+      },
+      {
+        "name": "watermelon",
+        "level": 0,
+        "cost": 4750,
+        "increase": 82
+      },
+      {
+        "name": "strawberry",
+        "level": 1,
+        "cost": 11.200000000000001,
+        "increase": 1.02
+      },
+      {
+        "name": "tangerine",
+        "level": 0,
+        "cost": 130,
+        "increase": 4
+      },
+      {
+        "name": "coconut",
+        "level": 0,
+        "cost": 850,
+        "increase": 12
+      },
+      {
+        "name": "plum",
+        "level": 0,
+        "cost": 4750,
+        "increase": 82
+      }
+    ],
+    "fpc": 2.02,
+    "fps": 1.02,
+    "fruit": 12.63000000000001,
+    "prestiege": 1
+  }
+}

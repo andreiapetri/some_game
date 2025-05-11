@@ -1,0 +1,207 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <title>Fuity Clicker</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <section>
+        <div class="util-buttons">
+            <div class="prestiege">
+                <div class="prestiege-info">
+                    <p>
+                      costs<br />
+                      100k fruits
+                    </p>
+                </div>
+                <button class="util-button prestiege-button" onclick="prestiege()">
+                    Prestiege
+                </button>
+            </div>
+            <div class="save-load">
+                <button class="util-button" onclick="save()">
+                    Save
+                </button>
+                <button class="util-button" onclick="load()">
+                    Load
+                </button>
+            </div>
+            <div class="upgrade-menu">
+                <button class="util-button menu-button">
+                    Upgrades
+                </button>
+            </div>
+        </div>
+        <div class="main">
+            <div class="left">
+                <div class="upgrade" onclick="buyUpgrade('clicker')">
+                    <div class="left-section">
+                        <img src="./assets/clicker-white.png" alt="" class="upgrade-img">
+                    </div>
+                    <div class="mid-section">
+                        <h4>Clicker</h4>
+                        <div class="cost-info">
+                            <p><span class="clicker-cost">10</span></p>
+                            <img src="./assets/fruit.png" alt="" srcset="" class="fruit-cost-img">
+                        </div>
+                    </div>
+                    <div class="right-section">Level <span class="clicker-level">0</span></div>
+                    <div class="next-level-info">
+                        <p>
+                            +<span class="clicker-increase">1</span> fruits<br /> per click
+                        </p>
+                    </div>
+                </div>
+                <div class="upgrade" onclick="buyUpgrade('banana')">
+                    <div class="left-section">
+                        <img src="./assets/banana.png" alt="" class="upgrade-img">
+                    </div>
+                    <div class="mid-section">
+                        <h4>Banana</h4>
+                        <div class="cost-info">
+                            <p><span class="banana-cost">130</span></p>
+                            <img src="./assets/fruit.png" alt="" srcset="" class="fruit-cost-img">
+                        </div>
+                    </div>
+                    <div class="right-section">Level <span class="banana-level">0</span></div>
+                    <div class="next-level-info">
+                        <p>
+                            +<span class="banana-increase">4</span> fruits<br /> per click
+                        </p>
+                    </div>
+                </div>
+                <div class="upgrade" onclick="buyUpgrade('mango')">
+                    <div class="left-section">
+                        <img src="./assets/mango.png" alt="" class="upgrade-img">
+                    </div>
+                    <div class="mid-section">
+                        <h4>Mango</h4>
+                        <div class="cost-info">
+                            <p>Cost: <span class="mango-cost">850</span></p>
+                            <img src="./assets/fruit.png" alt="" srcset="" class="fruit-cost-img">
+                        </div>
+                    </div>
+                    <div class="right-section">Level <span class="mango-level">0</span></div>
+                    <div class="next-level-info">
+                        <p>
+                            +<span class="mango-increase">12</span> fruits<br /> per click
+                        </p>
+                    </div>
+                </div>
+                <div class="upgrade" onclick="buyUpgrade('watermelon')">
+                    <div class="left-section">
+                        <img src="./assets/watermelon.png" alt="" class="upgrade-img">
+                    </div>
+                    <div class="mid-section">
+                        <h4>Watermelon</h4>
+                        <div class="cost-info">
+                            <p>Cost: <span class="watermelon-cost">4750</span></p>
+                            <img src="./assets/fruit.png" alt="" srcset="" class="fruit-cost-img">
+                        </div>
+                    </div>
+                    <div class="right-section">Level <span class="watermelon-level">0</span></div>
+                    <div class="next-level-info">
+                        <p>
+                            +<span class="watermelon-increase">82</span> fruits<br /> per click
+                        </p>
+                    </div>
+                </div>
+            </div>
+            <div class="middle">
+                <h3>Fruits <br /> <span class="fruit-cost yellow-text">0</span></h3>
+                <div class="fruit-image-container">
+                    <img
+                     src="./assets/fruit.png" 
+                     alt="./assets/strawberry-main.png" 
+                     class="fruit-image" 
+                     onclick="incrementFruit(event)" 
+                     draggable="false">
+                </div>
+            </div>
+            <div class="right">
+                <div class="upgrade" onclick="buyUpgrade('strawberry')">
+                    <div class="left-section">
+                        <img src="./assets/strawberry.png" alt="" id="myImage" class="upgrade-img">
+                    </div>
+                    <div class="mid-section">
+                        <h4>Strawberry</h4>
+                        <div class="cost-info">
+                            <p><span class="strawberry-cost">10</span></p>
+                            <img src="./assets/fruit.png" alt="" srcset="" class="fruit-cost-img">
+                        </div>
+                    </div>
+                    <div class="right-section">Level <span class="strawberry-level">0</span></div>
+                    <div class="next-level-info">
+                        <p>
+                            +<span class="strawberry-increase">1</span> fruits<br /> per second
+                        </p>
+                    </div>
+                </div>
+                <div class="upgrade" onclick="buyUpgrade('tangerine')">
+                    <div class="left-section">
+                        <img src="./assets/tangerine.png" alt="" class="upgrade-img">
+                    </div>
+                    <div class="mid-section">
+                        <h4>Tangerine</h4>
+                        <div class="cost-info">
+                            <p><span class="tangerine-cost">130</span></p>
+                            <img src="./assets/fruit.png" alt="" srcset="" class="fruit-cost-img">
+                        </div>
+                    </div>
+                    <div class="right-section">Level <span class="tangerine-level">0</span></div>
+                    <div class="next-level-info">
+                        <p>
+                            +<span class="tangerine-increase">4</span> fruits<br /> per second
+                        </p>
+                    </div>
+                </div>
+                <div class="upgrade" onclick="buyUpgrade('coconut')">
+                    <div class="left-section">
+                        <img src="./assets/coconut.png" alt="" class="upgrade-img">
+                    </div>
+                    <div class="mid-section">
+                        <h4>coconut</h4>
+                        <div class="cost-info">
+                            <p>Cost: <span class="coconut-cost">850</span></p>
+                            <img src="./assets/fruit.png" alt="" srcset="" class="fruit-cost-img">
+                        </div>
+                    </div>
+                    <div class="right-section">Level <span class="coconut-level">0</span></div>
+                    <div class="next-level-info">
+                        <p>
+                            +<span class="coconut-increase">12</span> fruits<br /> per second
+                        </p>
+                    </div>
+                </div>
+                <div class="upgrade" onclick="buyUpgrade('plum')">
+                    <div class="left-section">
+                        <img src="./assets/plum.png" alt="" class="upgrade-img">
+                    </div>
+                    <div class="mid-section">
+                        <h4>plum</h4>
+                        <div class="cost-info">
+                            <p>Cost: <span class="plum-cost">4750</span></p>
+                            <img src="./assets/fruit.png" alt="" srcset="" class="fruit-cost-img">
+                        </div>
+                    </div>
+                    <div class="right-section">Level <span class="plum-level">0</span></div>
+                    <div class="next-level-info">
+                        <p>
+                            +<span class="plum-increase">82</span> fruits<br /> per second
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="statistics">
+                 <div class="texts">
+                    <p>Frt/perclick: <span id="fpc-text" class="yellow-text">1</span></p>
+                    <p>Frt/persec: <span id="fps-text" class="yellow-text">0</span></p>
+               </div>
+        </div>
+    </section>
+    <script src="index.js"></script>
+</body>
+</html>
