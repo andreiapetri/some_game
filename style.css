@@ -305,6 +305,7 @@ body{
 
 @media (max-width: 1600px) {
     body {
+        overflow-y: auto; /* Allows vertical scrolling */
         height: auto; /* Change from 100vh to auto */
         min-height: 100vh; /* Ensure minimum full viewport height */
     }
