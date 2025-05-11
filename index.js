@@ -107,9 +107,6 @@ function incrementFruit(event){  //CREDITS APPLIED ON FRONTEND
 
     div.classList.add('fade-up');
     timeout(div);
-    setInterval(()=>{
-        save();
-    }, 10000);
 }
 
 const timeout = (div) => {
@@ -171,6 +168,9 @@ function load(){
     parsedFruit = JSON.parse(localStorage.getItem('fruit'));
     fruit.innerHTML = Math.round(parsedFruit);
     incrementPrestiege();
+    setInterval(()=>{
+        save();
+    }, 10000);
     }
 }
 

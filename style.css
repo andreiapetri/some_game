@@ -296,22 +296,22 @@ body{
     display: block;
 }
 .menu-button{
-        margin-top: 20px;
-        padding-right: 148px;
-        padding-left: 148px;
-        border-radius: 6px;
-        display: none;
-    }
+    margin-top: 20px;
+    padding-right: 148px;
+    padding-left: 148px;
+    border-radius: 6px;
+    display: none;
+}
 
 @media (max-width: 1600px) {
     body {
-        overflow-y: auto; /* Allows vertical scrolling */
-        height: auto; /* Change from 100vh to auto */
-        min-height: 100vh; /* Ensure minimum full viewport height */
+        height: auto; 
+        min-height: 100vh; 
     }
     
     .main {
         margin-top: 120px;
+        display: fixed;
     }
     .left,.right{
         display:none;
