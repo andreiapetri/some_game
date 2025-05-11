@@ -161,16 +161,16 @@ function load(){
         upgrade.level.innerHTML = savedValues.parsedLevel;
         upgrade.cost.innerHTML = Math.round(upgrade.parsedCost);
         upgrade.increase.innerHTML = upgrade.parsedIncrease.toFixed(2);
-    });
-    fpc = JSON.parse(localStorage.getItem('fpc'));
-    fps = JSON.parse(localStorage.getItem('fps'));
-    prestiegeLevel = JSON.parse(localStorage.getItem('prestiege'));
-    parsedFruit = JSON.parse(localStorage.getItem('fruit'));
-    fruit.innerHTML = Math.round(parsedFruit);
-    incrementPrestiege();
-    setInterval(()=>{
-        save();
-    }, 10000);
+        });
+        fpc = JSON.parse(localStorage.getItem('fpc'));
+        fps = JSON.parse(localStorage.getItem('fps'));
+        prestiegeLevel = JSON.parse(localStorage.getItem('prestiege'));
+        parsedFruit = JSON.parse(localStorage.getItem('fruit'));
+        fruit.innerHTML = Math.round(parsedFruit);
+        incrementPrestiege();
+        setInterval(()=>{
+            save();
+        }, 10000);
     }
 }
 
@@ -194,6 +194,20 @@ function prestiege(){
         save();
         load();
     }
+}
+
+function toggleUpgrades() {
+    const leftElements = document.querySelectorAll('.left');
+    const rightElements = document.querySelectorAll('.right');
+    const upgradesButton = document.querySelector('.menu-button');
+    const isActive = upgradesButton.classList.contains('active');
+    leftElements.forEach(el => {
+        el.style.display = isActive ? 'none' : 'grid';
+    });
+    rightElements.forEach(el => {
+        el.style.display = isActive ? 'none' : 'grid';
+    });
+    upgradesButton.classList.toggle('active');
 }
 
 setInterval(()=>{
