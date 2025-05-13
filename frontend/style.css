@@ -6,6 +6,7 @@
 }
 
 body{
+    touch-action: manipulation;
     display: grid;
     place-items: center;
     height: 100vh;
@@ -13,7 +14,11 @@ body{
     padding: 0;
     background-color: #2C2C2C;
     color: white;
+    -webkit-user-select: none; /* Safari */
+    -moz-user-select: none; /* Firefox */
+    -ms-user-select: none; /* IE10+/Edge */
     user-select: none;
+    -webkit-touch-callout: none; /* iOS Safari */
     position: relative;
     font-family: "Quicksand", sans-serif;
     overflow: hidden;
@@ -47,7 +52,9 @@ body{
     width: 340px;
     opacity: 0.88;
 }
-
+#fruit-image-main{
+    touch-action: none;
+}
 .fruit-image:hover{
     opacity: 0.7;
     cursor: pointer;
@@ -296,25 +303,30 @@ body{
     display: block;
 }
 .menu-button{
-        margin-top: 20px;
-        padding-right: 148px;
-        padding-left: 148px;
-        border-radius: 6px;
-        display: none;
-    }
+    margin-top: 20px;
+    padding-right: 148px;
+    padding-left: 148px;
+    border-radius: 6px;
+    display: none;
+}
+
+.clicker-title{
+    display: flex;
+    justify-content: center;
+    font-weight: bold;
+    font-size: 18px;
+}
 
 @media (max-width: 1600px) {
     body {
-        overflow-y: auto; /* Allows vertical scrolling */
-        height: auto; /* Change from 100vh to auto */
-        min-height: 100vh; /* Ensure minimum full viewport height */
+        overflow-y: auto;
+        height: auto; 
+        min-height: 100vh; 
     }
     
     .main {
         margin-top: 120px;
-    }
-    .left,.right{
-        display:none;
+        display: fixed;
     }
     .statistics{
         width: 300px;
@@ -333,19 +345,34 @@ body{
         right: 50%;
         transform: translate(50%);
     }
-    .menu-button:active .left{
-        display: flex;
-    }
     .fruit-image{
-        width: 280px;
+        width: 220px;
         opacity: 0.88;
     }   
     .middle h3{
     margin-bottom: 50px;
-    }
+    }	
     .prestiege-info{
     z-index: 2;
     left: 20px;
     margin-top: 62px;
+    }
+    .left {
+        display: none;
+        position: absolute;
+        right: 50%;
+        transform: translate(50%);
+        z-index: 1;
+        padding: 0px;
+        top: 190px;
+    }
+    .right {
+        display: none;
+        position: absolute;
+        right: 50%;
+        transform: translate(50%);
+        z-index: 1;
+        padding: 0px;
+        top: 695px;
     }
 }
