@@ -343,4 +343,9 @@ body{
     .middle h3{
     margin-bottom: 50px;
     }
+    .prestiege-info{
+    z-index: 2;
+    left: 20px;
+    margin-top: 62px;
+    }
 }
