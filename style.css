@@ -370,4 +370,9 @@ body{
         padding: 0px;
         top: 695px;
     }
+    .prestiege-info{
+    z-index: 2;
+    left: 20px;
+    margin-top: 62px;
+    }
 }
