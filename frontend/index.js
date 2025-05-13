@@ -226,8 +226,8 @@ function incrementPrestiege(){
 }
 
 function prestiege(){
-    if(parsedFruit >= 1 && prestiegeLevel === 0){
-        parsedFruit = 0;
+    if(parsedFruit >= 100000 && prestiegeLevel === 0){
+        parsedFruit -= 100000;
         fruit.innerHTML = parsedFruit;
         prestiegeLevel = 1;
         save();
